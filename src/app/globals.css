@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #211B19;
+  --color-brand-dark: #30231F;
+  --color-brand-beige: #C9A586;
+  --color-brand-beige-light: #E4C5A7;
+  --color-brand-beige-dark: #A88265;
+  --color-brand-white: #F5F0EB;
+  --color-brand-muted: #D8CFCA;
+  
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-manrope), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --bg-primary: #211B19;
+  --bg-dark: #30231F;
+  --accent-beige: #C9A586;
+  --accent-beige-light: #E4C5A7;
+  --text-white: #F5F0EB;
+  --text-muted: #D8CFCA;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #211B19;
+  color: #F5F0EB;
+  font-family: var(--font-manrope), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #211B19;
+  color: #F5F0EB;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom smooth transitions */
+.transition-luxury {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
