@@ -43,10 +43,10 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative w-full min-h-[760px] lg:min-h-screen flex flex-col justify-between pt-[88px] bg-[#211B19] overflow-hidden"
+      className="relative w-full min-h-[760px] lg:min-h-screen flex flex-col justify-between pt-[76px] sm:pt-[88px] bg-[#211B19] overflow-hidden"
     >
-      {/* Background Image Container */}
-      <div className="absolute inset-0 z-0 select-none pointer-events-none">
+      {/* Desktop Background Image Container (lg+) */}
+      <div className="hidden lg:block absolute inset-0 z-0 select-none pointer-events-none">
         <Image
           src="/hero.png"
           alt="Dr. Omar Alaedin em seu escritório de advocacia"
@@ -54,22 +54,36 @@ export function Hero() {
           priority
           quality={95}
           sizes="100vw"
-          className="object-cover object-[78%_center] lg:object-[82%_center] xl:object-[86%_center] opacity-90 transition-opacity duration-1000"
+          className="object-cover object-[82%_center] xl:object-[86%_center] opacity-90 transition-opacity duration-1000"
         />
 
         {/* Sophisticated Gradients for text contrast & lawyer preservation */}
-        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#211B19] via-[#211B19]/85 via-50% to-transparent to-85%" />
-        <div className="hidden sm:block lg:hidden absolute inset-0 bg-gradient-to-r from-[#211B19] via-[#211B19]/90 to-[#211B19]/40" />
-        <div className="sm:hidden absolute inset-0 bg-gradient-to-b from-[#211B19]/95 via-[#211B19]/85 to-[#211B19]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#211B19] via-[#211B19]/85 via-50% to-transparent to-85%" />
         <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#211B19]/80 to-transparent" />
         <div className="absolute bottom-0 inset-x-0 h-28 bg-gradient-to-t from-[#211B19] to-transparent" />
       </div>
 
+      {/* Fotografia do Advogado no Mobile (vem antes dos textos) */}
+      <div className="lg:hidden relative w-full h-[320px] sm:h-[400px] overflow-hidden select-none">
+        <Image
+          src="/hero.png"
+          alt="Dr. Omar Alaedin em seu escritório de advocacia"
+          fill
+          priority
+          quality={95}
+          sizes="100vw"
+          className="object-cover object-[78%_20%]"
+        />
+        {/* Gradientes suaves de integração com o fundo escuro */}
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#211B19] via-[#211B19]/85 to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-[#211B19]/40 to-transparent" />
+      </div>
+
       {/* Main Hero Content */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-20 flex-1 flex flex-col justify-center">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-2 pb-10 sm:py-16 lg:py-20 flex-1 flex flex-col justify-center">
         <div className="max-w-2xl xl:max-w-[650px]">
           {/* Eyebrow / Tagline */}
-          <div className="flex items-center gap-3.5 mb-6 animate-hero-eyebrow">
+          <div className="flex items-center gap-3.5 mb-5 sm:mb-6 animate-hero-eyebrow">
             <span className="w-8 h-[2px] bg-[#C9A586]" aria-hidden="true" />
             <span className="text-xs sm:text-[13px] font-semibold tracking-[0.2em] uppercase text-[#F5F0EB]/90 font-sans">
               ASSESSORIA JURÍDICA ESPECIALIZADA
@@ -77,7 +91,7 @@ export function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="font-serif text-[#F5F0EB] text-[42px] sm:text-[54px] md:text-[62px] lg:text-[70px] xl:text-[76px] font-medium leading-[1.08] tracking-tight mb-6 sm:mb-8 drop-shadow-sm animate-hero-headline">
+          <h1 className="font-serif text-[#F5F0EB] text-[36px] sm:text-[48px] md:text-[60px] lg:text-[70px] xl:text-[76px] font-medium leading-[1.12] sm:leading-[1.08] tracking-tight mb-5 sm:mb-8 drop-shadow-sm animate-hero-headline">
             <span className="block">Soluções jurídicas</span>
             <span className="block">com estratégia, segurança</span>
             <span className="block text-[#E4C5A7]">e compromisso</span>
