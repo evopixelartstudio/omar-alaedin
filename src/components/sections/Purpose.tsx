@@ -12,7 +12,7 @@ export function Purpose() {
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           {/* Coluna Esquerda — Fotografia Cinematográfica */}
-          <div className="w-full lg:w-1/2 flex justify-center">
+          <div className="w-full lg:w-1/2 flex justify-center reveal-on-scroll">
             <div className="relative w-full max-w-[540px] aspect-[4/3] rounded-[18px] overflow-hidden shadow-xl border border-[#DED4CA]/60 group">
               <Image
                 src="/proposito-balanca.png"
@@ -30,7 +30,7 @@ export function Purpose() {
           </div>
 
           {/* Coluna Direita — Conteúdo Editorial */}
-          <div className="w-full lg:w-1/2 max-w-xl flex flex-col items-start justify-center">
+          <div className="w-full lg:w-1/2 max-w-xl flex flex-col items-start justify-center reveal-on-scroll delay-150">
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-5">
               <span

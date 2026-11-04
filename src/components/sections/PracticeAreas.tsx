@@ -70,8 +70,8 @@ export function PracticeAreas() {
     >
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-12 lg:gap-14">
-          {/* Coluna Esquerda — Conteúdo Editorial Exatamente como no Mockup */}
-          <div className="w-full lg:w-[42%] max-w-xl flex flex-col justify-center">
+          {/* Coluna Esquerda — Conteúdo Editorial */}
+          <div className="w-full lg:w-[42%] max-w-xl flex flex-col justify-center reveal-on-scroll">
             {/* Identificador Superior */}
             <div className="flex items-center gap-3 mb-5">
               <span
@@ -83,19 +83,19 @@ export function PracticeAreas() {
               </span>
             </div>
 
-            {/* Título Principal em Duas Linhas como no Mockup */}
+            {/* Título Principal */}
             <h2 className="font-serif text-[#30231F] text-[36px] sm:text-[44px] lg:text-[48px] xl:text-[52px] font-medium leading-[1.12] tracking-tight mb-5 max-w-[480px]">
               <span className="block">Atuação jurídica em</span>
               <span className="block">diversas frentes do Direito</span>
             </h2>
 
-            {/* Descrição Idêntica ao Mockup */}
+            {/* Descrição */}
             <p className="font-sans text-[15px] sm:text-[16px] text-[#554A45] leading-[1.65] max-w-[440px] mb-8 lg:mb-10 font-normal">
               Soluções completas para você, sua empresa e seus negócios, com foco
               em segurança, conformidade e resultados.
             </p>
 
-            {/* Botão Desktop/Tablet com Seta */}
+            {/* Botão Desktop/Tablet */}
             <div className="hidden lg:block">
               <a
                 href={whatsappConsultUrl}
@@ -111,7 +111,7 @@ export function PracticeAreas() {
           </div>
 
           {/* Coluna Direita — Grid 2x2 com os 4 Cards */}
-          <div className="w-full lg:w-[58%]">
+          <div className="w-full lg:w-[58%] reveal-on-scroll delay-150">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
               {PRACTICE_AREAS.map((area, index) => (
                 <PracticeAreaCard key={area.id} area={area} index={index} />

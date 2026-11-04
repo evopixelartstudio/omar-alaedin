@@ -17,8 +17,8 @@ export function ContactCTA() {
       className="relative w-full bg-[#181413] pb-14 sm:pb-18 lg:pb-24 scroll-mt-20 overflow-hidden"
     >
       <div className="max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16 xl:px-20">
-        {/* Banner Horizontal Idêntico ao Mockup */}
-        <div className="relative w-full bg-[#211B19] rounded-[22px] sm:rounded-[26px] overflow-hidden shadow-2xl flex flex-col lg:flex-row min-h-[250px] lg:h-[270px] xl:h-[280px] border border-[#473A34]/50">
+        {/* Banner Horizontal */}
+        <div className="relative w-full bg-[#211B19] rounded-[22px] sm:rounded-[26px] overflow-hidden shadow-2xl flex flex-col lg:flex-row min-h-[250px] lg:h-[270px] xl:h-[280px] border border-[#473A34]/50 reveal-on-scroll">
           {/* Região Esquerda — Fotografia da Justiça (Têmis) */}
           <div className="relative w-full lg:w-[46%] h-[200px] sm:h-[240px] lg:h-full overflow-hidden select-none">
             <Image
@@ -30,13 +30,11 @@ export function ContactCTA() {
               className="object-cover object-[center_35%] lg:object-[left_center] transition-transform duration-700 ease-out hover:scale-[1.02]"
             />
 
-            {/* Gradiente horizontal sutil para integração com o fundo */}
             <div
               className="hidden lg:block absolute inset-0 bg-gradient-to-r from-transparent via-[#211B19]/40 via-65% to-[#211B19]"
               aria-hidden="true"
             />
 
-            {/* Gradiente vertical inferior no Mobile */}
             <div
               className="lg:hidden absolute inset-0 bg-gradient-to-t from-[#211B19] via-[#211B19]/60 to-transparent"
               aria-hidden="true"

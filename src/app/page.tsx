@@ -8,10 +8,12 @@ import { DifferentialsEditorial } from "@/components/sections/DifferentialsEdito
 import { FAQ } from "@/components/sections/FAQ";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollObserver } from "@/components/ui/ScrollObserver";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#211B19] text-[#F5F0EB] flex flex-col">
+      <ScrollObserver />
       <Header />
       <Hero />
       <Purpose />

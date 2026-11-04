@@ -10,6 +10,8 @@ const NAV_LINKS = [
   { label: "Áreas de Atuação", href: "#areas-de-atuacao" },
   { label: "Sobre", href: "#sobre" },
   { label: "Diferenciais", href: "#diferenciais" },
+  { label: "Processo", href: "#processo" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -23,7 +25,7 @@ export function Footer() {
 
   return (
     <footer className="relative w-full bg-[#181413] text-[#F5F0EB] pt-16 sm:pt-20 pb-8 sm:pb-10 border-t border-[#473A34]/50 overflow-hidden">
-      {/* Monograma Watermark em Marca d'Água no fundo à direita como no Mockup */}
+      {/* Monograma Watermark em Marca d'Água no fundo à direita */}
       <div
         className="pointer-events-none absolute -right-16 top-1/2 -translate-y-1/2 w-[340px] h-[340px] opacity-[0.05] select-none"
         aria-hidden="true"
@@ -37,8 +39,8 @@ export function Footer() {
       </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16 xl:px-20">
-        {/* Grade de 4 Colunas Exatamente como no Mockup */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12">
+        {/* Grade de 4 Colunas */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 reveal-on-scroll">
           {/* Coluna 1 — Logo Horizontal */}
           <div className="lg:col-span-4 flex flex-col items-start">
             <Link

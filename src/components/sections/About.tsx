@@ -15,8 +15,8 @@ export function About() {
       className="relative w-full bg-[#211B19] text-[#F5F0EB] scroll-mt-20 overflow-hidden"
     >
       <div className="w-full flex flex-col lg:flex-row min-h-[460px] lg:h-[520px]">
-        {/* Coluna Esquerda — Fotografia do Advogado (50% no Desktop) */}
-        <div className="relative w-full lg:w-1/2 h-[380px] sm:h-[460px] lg:h-full overflow-hidden select-none">
+        {/* Coluna Esquerda — Fotografia do Advogado */}
+        <div className="relative w-full lg:w-1/2 h-[380px] sm:h-[460px] lg:h-full overflow-hidden select-none reveal-on-scroll">
           <Image
             src="/omar-sobre.png"
             alt="Dr. Omar Alaedin em seu escritório de advocacia"
@@ -26,21 +26,19 @@ export function About() {
             className="object-cover object-[center_20%] lg:object-[center_16%]"
           />
 
-          {/* Gradiente horizontal sutil na extremidade direita para fusão */}
           <div
             className="hidden lg:block absolute inset-y-0 right-0 w-36 bg-gradient-to-r from-transparent to-[#211B19]"
             aria-hidden="true"
           />
 
-          {/* Gradiente vertical inferior no mobile */}
           <div
             className="lg:hidden absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#211B19] to-transparent"
             aria-hidden="true"
           />
         </div>
 
-        {/* Coluna Direita — Informações Institucionais (50% no Desktop) */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-16 xl:px-20 py-12 lg:py-0 bg-[#211B19]">
+        {/* Coluna Direita — Informações Institucionais */}
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-16 xl:px-20 py-12 lg:py-0 bg-[#211B19] reveal-on-scroll delay-150">
           <div className="max-w-[540px] flex flex-col items-start">
             {/* Identificador Superior */}
             <div className="flex items-center gap-3 mb-3">

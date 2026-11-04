@@ -63,7 +63,7 @@ export function FAQ() {
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Coluna Esquerda — Conteúdo Editorial */}
-          <div className="lg:col-span-5 flex flex-col items-start justify-center">
+          <div className="lg:col-span-5 flex flex-col items-start justify-center reveal-on-scroll">
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-5">
               <span
@@ -100,7 +100,7 @@ export function FAQ() {
           </div>
 
           {/* Coluna Direita — Accordion */}
-          <div className="lg:col-span-7 flex flex-col divide-y divide-[#473A34]/60 border-y border-[#473A34]/60">
+          <div className="lg:col-span-7 flex flex-col divide-y divide-[#473A34]/60 border-y border-[#473A34]/60 reveal-on-scroll delay-150">
             {FAQ_ITEMS.map((item, index) => {
               const isOpen = openIndex === index;
               return (

@@ -36,7 +36,7 @@ export function Process() {
     >
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         {/* Cabeçalho */}
-        <div className="mb-14 sm:mb-16">
+        <div className="mb-14 sm:mb-16 reveal-on-scroll">
           <div className="flex items-center gap-3 mb-4">
             <span
               className="w-7 h-[2px] bg-[#C9A586] shrink-0"
@@ -55,10 +55,11 @@ export function Process() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 relative">
           {STEPS.map((step, index) => {
             const isLast = index === STEPS.length - 1;
+            const delays = ["delay-100", "delay-200", "delay-300"];
             return (
               <div
                 key={step.number}
-                className="relative flex flex-col items-start pr-4 group"
+                className={`relative flex flex-col items-start pr-4 group reveal-on-scroll ${delays[index]}`}
               >
                 {/* Número / Badge */}
                 <div className="w-11 h-11 rounded-full bg-[#E4C5A7]/30 border border-[#C9A586]/60 flex items-center justify-center font-sans font-semibold text-[15px] text-[#30231F] mb-6 group-hover:bg-[#C9A586] group-hover:text-[#211B19] transition-colors duration-300">

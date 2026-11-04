@@ -43,8 +43,8 @@ export function DifferentialsEditorial() {
     >
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          {/* Coluna 1 — Conteúdo Editorial Esquerda (4 colunas) */}
-          <div className="lg:col-span-4 flex flex-col items-start justify-center">
+          {/* Coluna 1 — Conteúdo Editorial Esquerda */}
+          <div className="lg:col-span-4 flex flex-col items-start justify-center reveal-on-scroll">
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-5">
               <span
@@ -82,8 +82,8 @@ export function DifferentialsEditorial() {
             </a>
           </div>
 
-          {/* Coluna 2 — Fotografia do Escritório Central (4 colunas) */}
-          <div className="lg:col-span-4 flex justify-center">
+          {/* Coluna 2 — Fotografia do Escritório Central */}
+          <div className="lg:col-span-4 flex justify-center reveal-on-scroll delay-150">
             <div className="relative w-full max-w-[380px] aspect-[3/4] rounded-[18px] overflow-hidden shadow-2xl border border-[#C9A586]/25 group">
               <Image
                 src="/escritorio-diferenciais.png"
@@ -100,8 +100,8 @@ export function DifferentialsEditorial() {
             </div>
           </div>
 
-          {/* Coluna 3 — Lista de 4 Diferenciais Direita (4 colunas) */}
-          <div className="lg:col-span-4 flex flex-col space-y-6 sm:space-y-7">
+          {/* Coluna 3 — Lista de 4 Diferenciais Direita */}
+          <div className="lg:col-span-4 flex flex-col space-y-6 sm:space-y-7 reveal-on-scroll delay-300">
             {EDITORIAL_DIFFERENTIALS.map((item, index) => {
               const Icon = item.icon;
               return (
