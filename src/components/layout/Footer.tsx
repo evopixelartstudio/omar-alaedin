@@ -41,18 +41,18 @@ export function Footer() {
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16 xl:px-20">
         {/* Grade de 4 Colunas */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 reveal-on-scroll">
-          {/* Coluna 1 — Logo Horizontal */}
+          {/* Coluna 1 — Logotipo em Bege e Antracite */}
           <div className="lg:col-span-4 flex flex-col items-start">
             <Link
               href="#inicio"
-              className="relative block h-[52px] sm:h-[60px] w-[210px] sm:w-[230px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A586]"
+              className="relative block h-[76px] sm:h-[90px] w-[140px] sm:w-[165px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A586]"
               aria-label="Omar Alaedin Assessoria Jurídica - Início"
             >
               <Image
-                src="/logo-nav.png"
+                src="/logo-footer.png"
                 alt="Omar Alaedin Assessoria Jurídica"
                 fill
-                sizes="230px"
+                sizes="(max-width: 640px) 140px, 165px"
                 className="object-contain object-left"
               />
             </Link>
