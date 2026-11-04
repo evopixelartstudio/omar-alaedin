@@ -45,8 +45,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${manrope.variable}`}>
-      <body className="font-sans antialiased bg-[#211B19] text-[#F5F0EB]">
+    <html
+      lang="pt-BR"
+      className={`${cormorant.variable} ${manrope.variable}`}
+      suppressHydrationWarning
+    >
+      <body
+        className="font-sans antialiased bg-[#211B19] text-[#F5F0EB]"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>
