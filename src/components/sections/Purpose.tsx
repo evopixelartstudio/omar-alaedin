@@ -7,32 +7,26 @@ export function Purpose() {
   return (
     <section
       id="proposito"
-      className="relative w-full bg-[#F5F0EB] text-[#30231F] py-20 sm:py-24 lg:py-28 scroll-mt-20 overflow-hidden border-b border-[#DED4CA]/50"
+      className="relative w-full bg-[#F5F0EB] text-[#30231F] scroll-mt-20 overflow-hidden"
     >
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
-          {/* Coluna Esquerda — Fotografia Cinematográfica */}
-          <div className="w-full lg:w-1/2 flex justify-center reveal-on-scroll">
-            <div className="relative w-full max-w-[540px] aspect-[4/3] rounded-[18px] overflow-hidden shadow-xl border border-[#DED4CA]/60 group">
-              <Image
-                src="/proposito-balanca.png"
-                alt="Balança da Justiça dourada e livros jurídicos clássicos"
-                fill
-                sizes="(max-width: 1024px) 100vw, 540px"
-                className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                quality={92}
-              />
-              <div
-                className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"
-                aria-hidden="true"
-              />
-            </div>
-          </div>
+      <div className="w-full flex flex-col lg:flex-row min-h-[460px] lg:h-[500px] xl:h-[540px]">
+        {/* Coluna Esquerda — Fotografia Cinematográfica FULL BLEED (sem formato de cartão, exatamente como no mockup) */}
+        <div className="relative w-full lg:w-1/2 h-[360px] sm:h-[440px] lg:h-full overflow-hidden select-none reveal-on-scroll">
+          <Image
+            src="/proposito-balanca.png"
+            alt="Balança da Justiça dourada e livros jurídicos clássicos"
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="object-cover object-center transition-transform duration-700 ease-out hover:scale-[1.02]"
+            quality={95}
+          />
+        </div>
 
-          {/* Coluna Direita — Conteúdo Editorial */}
-          <div className="w-full lg:w-1/2 max-w-xl flex flex-col items-start justify-center reveal-on-scroll delay-150">
+        {/* Coluna Direita — Conteúdo Editorial sobre fundo claro */}
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-16 xl:px-24 py-12 lg:py-0 bg-[#F5F0EB] reveal-on-scroll delay-150">
+          <div className="max-w-[540px] flex flex-col items-start">
             {/* Eyebrow */}
-            <div className="flex items-center gap-3 mb-5">
+            <div className="flex items-center gap-3 mb-4">
               <span
                 className="w-7 h-[2px] bg-[#C9A586] shrink-0"
                 aria-hidden="true"
@@ -43,7 +37,7 @@ export function Purpose() {
             </div>
 
             {/* Headline */}
-            <h2 className="font-serif text-[#30231F] text-[34px] sm:text-[42px] lg:text-[48px] font-medium leading-[1.12] tracking-tight mb-5">
+            <h2 className="font-serif text-[#30231F] text-[34px] sm:text-[42px] lg:text-[46px] font-medium leading-[1.14] tracking-tight mb-5">
               <span className="block">Mais do que processos,</span>
               <span className="block">viemos para proteger</span>
               <span className="block">o que é importante para você.</span>
