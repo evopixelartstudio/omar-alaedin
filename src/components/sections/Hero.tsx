@@ -43,10 +43,10 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative w-full min-h-[760px] lg:min-h-screen flex flex-col justify-between pt-[76px] sm:pt-[88px] bg-[#211B19] overflow-hidden"
+      className="relative w-full min-h-[720px] lg:min-h-screen flex flex-col justify-between pt-[76px] sm:pt-[88px] bg-[#211B19]"
     >
       {/* Desktop Background Image Container (lg+) */}
-      <div className="hidden lg:block absolute inset-0 z-0 select-none pointer-events-none">
+      <div className="hidden lg:block absolute inset-0 z-0 overflow-hidden select-none pointer-events-none">
         <Image
           src="/hero.png"
           alt="Dr. Omar Alaedin em seu escritório de advocacia"
@@ -129,9 +129,9 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Faixa inferior da Hero: Diferenciais */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pb-8 lg:pb-10 animate-hero-card">
-        <div className="w-full bg-[#30231F]/90 backdrop-blur-md border border-[#C9A586]/20 rounded-[14px] shadow-2xl overflow-hidden">
+      {/* Faixa de Diferenciais: Fronteira entre a Hero e a próxima seção (sem espaço abaixo) */}
+      <div className="relative z-20 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 -mb-12 sm:-mb-14 lg:-mb-16 animate-hero-card">
+        <div className="w-full bg-[#30231F] border border-[#C9A586]/25 rounded-[14px] shadow-2xl overflow-hidden backdrop-blur-md">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#C9A586]/15">
             {DIFFERENTIALS.map((item, index) => {
               const Icon = item.icon;

@@ -23,7 +23,7 @@ export function Purpose() {
         </div>
 
         {/* Coluna Direita — Conteúdo Editorial sobre fundo claro */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-16 xl:px-24 py-12 lg:py-0 bg-[#F5F0EB] reveal-on-scroll delay-150">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-16 xl:px-24 py-16 sm:py-20 lg:py-14 pt-16 sm:pt-20 lg:pt-16 bg-[#F5F0EB] reveal-on-scroll delay-150">
           <div className="max-w-[540px] flex flex-col items-start">
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-4">
